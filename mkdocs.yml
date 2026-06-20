@@ -1,0 +1,51 @@
+site_name: Guía de Desarrollo Web
+site_description: Documentación sobre tecnologías de desarrollo web moderno
+site_author: Elias Milian
+
+theme:
+  name: material
+  language: es
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: lime
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - content.code.annotate
+    - content.tabs.link
+
+nav:
+  - Inicio: index.md
+  - HTML y CSS:
+      - Fundamentos HTML: html.md
+      - Estilos con CSS: css.md
+  - JavaScript: javascript.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - toc:
+      permalink: "#"
+  - attr_list
